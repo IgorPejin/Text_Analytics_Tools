@@ -1,0 +1,18 @@
+<div class="container mt-5 w-50 d-flex flex-column align-items-start">
+  <h2 *ngIf="!tokenFlag;else change" class=" mb-5 text-center">Enter your dandelion.eu token:</h2>
+  <h3 *ngIf="!tokenFlag;else changei">
+    <figure class="d-flex">
+      <figcaption>Status:</figcaption><img src="assets/mark.png"/>
+    </figure>
+  </h3>
+  <ng-template #change>
+    <h2 class="mt-5 mb-4 text-center">Edit your dandelion.eu token:</h2>
+  </ng-template>
+  <ng-template #changei>
+    <figure class="d-flex align-items-center" >
+      <figcaption>Status:</figcaption><img src="assets/check.svg"/>
+    </figure>
+  </ng-template>
+<input class=" form-control" required type="text" placeholder="Your token here" [(ngModel)]="token"/>
+<input class="mt-5 btn btn-outline-primary w-25" type="button" value="Submit" (click)="setToken()">
+</div>

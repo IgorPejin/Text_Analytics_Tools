@@ -1,0 +1,16 @@
+#type
+{
+  --red:0;
+  --green:0;
+  --blue:0;
+  color: rgb(var(--red),var(--green),var(--blue));
+}
+
+
+textarea{
+  resize: none;
+}
+.res
+{
+  font-size: 2rem;
+}

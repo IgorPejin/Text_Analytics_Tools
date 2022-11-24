@@ -1,0 +1,8 @@
+.languages
+{
+  height: 200px;
+  overflow-y: auto;
+}
+textarea{
+  resize: none;
+}

@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  textsimApi: 'https://api.dandelion.eu/datatxt/sim/v1',
+  langdetApi: 'https://api.dandelion.eu/datatxt/li/v1',
+  entityexApi: 'https://api.dandelion.eu/datatxt/nex/v1',
+  sentanApi: 'https://api.dandelion.eu/datatxt/sent/v1'
 };
 
 /*
